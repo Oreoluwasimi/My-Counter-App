@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Sacramento&display=swap');
+
+:root {
+  /* Colors */
+  --main-color: #ff006e;
+  --increment-btn: #38b000;
+  --decrement-btn: #ff595e;
+  --reset-btn: #3a86ff;
+  --light: #f5eae4;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--light);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--main-color);
+  color: var(--light);
+  padding: 40px 0;
+  width: 100%;
+  margin: 0;
+  border-radius: 0 0 45px 45px;
+  box-sizing: border-box;
 }
 
-.App-link {
-  color: #61dafb;
+.logo-element {
+  padding: 0;
+  margin: 0;
+  margin-left: 75px;
+  font-size: 40px;
+  font-weight: 800;
+  font-family: 'Sacramento', cursive;
+  color: rgb(232, 217, 168);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar{
+  display: flex;
+  width: 35%;
+  margin-left: auto;
+}
+
+.navbar ul{
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar ul li a{
+  display: flex;
+  margin-left: 40px;
+  margin-right: 40px;
+  color: var(--light);
+  text-decoration: none;
+  font-size: 18px;
+  
+}
+
+.btns {
+  margin: auto;
+  margin-top: 30px;
+  width: 30%;
+  display: flex;
+  justify-content: space-evenly;
+
+  /* border: 2px solid rebeccapurple; */
+  
+}
+
+button {
+  color: var(--light);
+  border: none;
+  padding: 1em;
+  border-radius: 8px;
+}
+
+.increment-btn {
+  background-color: var(--increment-btn);
+  color: var(--light);
+}
+
+.decrement-btn {
+  background-color: var(--decrement-btn);
+}
+
+.reset-btn {
+  background-color: var(--reset-btn);
+}
+
+.pagenotfound {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 150px;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 500;
+  margin-top: 100px;
 }
