@@ -1,5 +1,6 @@
-import React, { useReducer, useState } from "react";
+import React from "react";
 import { Link, Outlet } from "react-router-dom";
+import { useCounter } from "./useCounter";
 
 function reducer(state, action) {
   switch (action.type) {
@@ -20,18 +21,8 @@ function reducer(state, action) {
 
 function Counter() {
 
-    const [state, dispatch] = useReducer(reducer, { count: 0 });
-
-    function increment() {
-      dispatch({ type: "increment" });
-    }
-    function decrement() {
-
-      dispatch({ type: "decrement" });
-    }
-    function reset() {
-      dispatch({ type: "reset" });
-    }
+  
+    const [increment,decrement,reset,state] = useCounter(reducer,{count:0})
 
     return (
       <div>
