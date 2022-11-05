@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Link to the deployed project
+Here is the [link](https://counter-react-app-oreoluwa.netlify.app/) to the deployed project on Netlify
+
 ## Available Scripts
 
 In the project directory, you can run:
