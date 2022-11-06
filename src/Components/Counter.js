@@ -37,7 +37,7 @@ function Counter() {
                 <Link to="*"> Count History</Link>
               </li>
               <li>
-                <Link to="#"> error</Link>
+                <Link to="#"> Logout </Link>
               </li>
             </ul>
           </nav>
